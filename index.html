@@ -1,438 +1,1235 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="EtechEdge Solutions - IT & Digital Solutions"
-    />
-    <title>Home | EtechEdge</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="assets/comp-logo.png"
-            alt="comp-logo"
-            class="img-logo img-fluid"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
-          <i class="bi bi-list"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav mx-auto align-items-lg-center">
-            <li>
-              <a class="nav-link" data-page="home" href="index.html">Home</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="about" href="about.html">About</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="services" href="services.html"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                data-page="case-studies"
-                href="case-studies.html"
-                >Case Studies</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" data-page="blog" href="blog.html">Blog</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="contact" href="contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <a
-            class="btn btn-primary-custom d-none d-lg-inline-flex"
-            href="contact.html"
-            >Book a Demo <i class="bi bi-arrow-right ms-2"></i
-          ></a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Affordable custom software, web & mobile app development, CRM solutions, and specialized enterprise systems." />
+  <meta name="author" content="EtechEdge Solutions" />
+  <link rel="canonical" href="https://kp-sinha.github.io/etechedge/" />
+  <meta property="og:title" content="EtechEdge Solutions | Enterprise Software & Digital Transformation" />
+  <meta property="og:description"
+    content="Affordable custom software, web & mobile app development, CRM solutions, and specialized enterprise systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kp-sinha.github.io/etechedge/" />
+  <meta property="og:image" content="https://kp-sinha.github.io/etechedge/assets/comp-logo.png" />
+  <title>EtechEdge Solutions | Enterprise Software & Digital Transformation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("etechedge_theme");
+      if (saved !== "dark") {
+        document.documentElement.setAttribute("data-theme", "mverve");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/comp-logo.png" alt="EtechEdge Logo" class="img-logo img-fluid" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" data-page="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="about" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="services" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="products" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="technology" href="technology.html">Technology</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="case-studies" href="case-studies.html">Case Studies</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" data-page="careers" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" data-page="blog" href="blog.html">Blogs</a></li>
+        </ul>
+        <a class="btn btn-primary-custom d-none d-lg-inline-flex" href="contact.html">
+          Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+        <div class="nav-mobile-cta d-lg-none">
+          <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
+            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="home-hero">
-      <div class="hero-network"></div>
-      <div
-        class="container d-flex flex-column flex-lg-row align-items-center justify-content-between"
-      >
-        <div class="hero-copy reveal">
-          <span class="eyebrow pill">IT & DIGITAL SOLUTIONS</span>
-          <h1>
-            Transform Your Business with<br /><span
-              >Intelligent Technology</span
-            >
-          </h1>
-          <p>
-            We build enterprise-grade software, mobile apps, and digital<br
-              class="d-none d-md-block"
-            />
-            experiences that drive growth, efficiency, and competitive
-            advantage.
-          </p>
-          <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary-custom"
-              >Book a Free Demo <i class="bi bi-arrow-right"></i></a
-            ><a href="case-studies.html" class="btn btn-outline-custom"
-              >View Case Studies</a
-            >
+  <!-- Hero Section / Multi-Slide Showcase -->
+  <section class="home-hero">
+    <!-- Background Image Slides Layer -->
+    <div class="hero-bg-slider" aria-hidden="true">
+      <div class="hero-bg-slide hero-bg-slide-1 active"></div>
+      <div class="hero-bg-slide hero-bg-slide-2"></div>
+      <div class="hero-bg-slide hero-bg-slide-3"></div>
+    </div>
+    <div class="hero-glow-orb hero-glow-orb-1"></div>
+    <div class="hero-glow-orb hero-glow-orb-2"></div>
+    <div class="container hero-slider-container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <!-- Slide 1 -->
+          <div class="hero-slide active">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>INTELLIGENT SOFTWARE & DIGITAL ENGINEERING</span>
+            </div>
+            <h1 class="hero-title">
+              Transform Your Business with
+              <span class="text-gradient">Intelligent Technology</span>
+            </h1>
+            <p class="hero-description">
+              EtechEdge builds high-performance enterprise software, robust cloud systems,
+              and conversion-driven web & mobile applications tailored to your business challenges.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary-custom">
+                Explore Products <i class="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
+              <a href="services.html" class="btn btn-outline-custom">
+                Our Services
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="hero-slide">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>ENTERPRISE WAREHOUSE & INVENTORY</span>
+            </div>
+            <h1 class="hero-title">
+              Streamline Logistics with
+              <span class="text-gradient">Automated Barcode Tracking</span>
+            </h1>
+            <p class="hero-description">
+              Tailor-made warehouse inventory software featuring instantaneous barcode generation,
+              real-time stock flow monitoring, and comprehensive audit reports.
+            </p>
+            <div class="hero-actions">
+              <a href="https://etechedge.com/inv/html/pEntry" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary-custom">
+                Try Live Inventory Demo <i class="bi bi-play-circle ms-1"></i>
+              </a>
+              <a href="case-studies.html" class="btn btn-outline-custom">
+                Read Case Study
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="hero-slide">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>HEALTHCARE & DIAGNOSTICS SOLUTIONS</span>
+            </div>
+            <h1 class="hero-title">
+              Next-Gen Pathology Lab &
+              <span class="text-gradient">Hospital Systems</span>
+            </h1>
+            <p class="hero-description">
+              Error-free diagnostic calculation, automated result validation, and seamless
+              clinical reporting trusted by pathologists and healthcare providers worldwide.
+            </p>
+            <div class="hero-actions">
+              <a href="https://etechedge.com/L/html/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary-custom">
+                Explore Lab Software <i class="bi bi-shield-check ms-1"></i>
+              </a>
+              <a href="products.html" class="btn btn-outline-custom">
+                View All Products
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Indicators -->
+          <div class="hero-controls">
+            <div class="hero-indicators">
+              <div class="hero-dot active" title="Slide 1"></div>
+              <div class="hero-dot" title="Slide 2"></div>
+              <div class="hero-dot" title="Slide 3"></div>
+            </div>
           </div>
         </div>
-        <div class="scroll-dot"><i class="bi bi-mouse"></i></div>
-        <div class="col-lg-6">
+
+        <!-- Quick Consultation Card -->
+        <div class="col-lg-5">
           <div class="consult-card">
-            <h3>Ready to Start Your Project?</h3>
+            <h3>Start Your Digital Project</h3>
             <p>
-              Tell us about your goals and we'll craft a tailored solution. No
-              commitment required.
+              Get in touch with our solutions architects for an estimate and tailored consultation.
             </p>
             <form class="quick-form">
-              <input required placeholder="Your Name" /><input
-                required
-                type="email"
-                placeholder="Work Email"
-              /><textarea
-                required
-                placeholder="Brief project description"
-              ></textarea
-              ><button class="btn btn-primary-custom w-100">
-                Get Free Consultation <i class="bi bi-arrow-right"></i>
+              <input required type="text" name="name" placeholder="Your Full Name" aria-label="Your Name" />
+              <input required type="email" name="email" placeholder="Work Email Address" aria-label="Work Email" />
+              <input required type="tel" name="phone" pattern="[0-9+\s\-()]{7,20}" placeholder="Enter your phone number"
+                aria-label="Phone Number"
+                title="Please enter a valid phone number (digits, +, -, parentheses allowed)" />
+              <select required name="service" aria-label="Select Service">
+                <option value="">Select Service / Product Interest</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Website Development">Website Development</option>
+                <option value="CRM Solutions">CRM Software Development</option>
+                <option value="Inventory System">Inventory Management System</option>
+                <option value="Pathology Software">Pathology Lab Software</option>
+                <option value="UI/UX Design">UI / UX Designing</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+              </select>
+              <textarea required name="message" placeholder="Brief project description or requirements"
+                aria-label="Project details"></textarea>
+              <button type="submit" class="btn btn-primary-custom w-100">
+                Request Free Consultation <i class="bi bi-arrow-right ms-2"></i>
               </button>
+              <div class="quick-form-message mt-2" style="font-size: 13px;"></div>
             </form>
           </div>
         </div>
       </div>
-    </section>
-    <section class="stats-strip">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-6 col-lg-3">
-            <strong data-count="150">0+</strong><span>Projects Delivered</span>
+    </div>
+  </section>
+
+  <!-- Trust & Value Strip -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="bi bi-shield-check"></i>
+            <span>Enterprise-Grade Security</span>
           </div>
-          <div class="col-6 col-lg-3">
-            <strong data-count="50">0+</strong><span>Enterprise Clients</span>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="bi bi-cpu"></i>
+            <span>Modern Tech Stack</span>
           </div>
-          <div class="col-6 col-lg-3">
-            <strong data-count="98">0%</strong><span>Client Satisfaction</span>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="bi bi-lightning-charge"></i>
+            <span>Agile Milestones</span>
           </div>
-          <div class="col-6 col-lg-3">
-            <strong data-count="10">0+</strong><span>Years Experience</span>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="trust-item">
+            <i class="bi bi-headset"></i>
+            <span>Dedicated Support</span>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section services-preview">
-      <div class="container">
-        <div class="section-title text-center">
-          <span class="section-label">WHAT WE DO</span>
-          <h2>End-to-End Digital Services</h2>
-          <p>
-            From concept to deployment, we deliver comprehensive IT solutions
-            that empower<br class="d-none d-md-block" />
-            businesses to thrive in the digital era.
-          </p>
-        </div>
+    </div>
+  </div>
 
-        <div class="services-carousel-wrapper">
-          <div class="services-carousel-viewport">
-            <div class="services-carousel-track" id="servicesTrack">
-              <!-- Card 1 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-code-slash"></i></div>
-                  <h3>Software Development</h3>
-                  <p>
-                    Software development is the process of creating, designing,
-                    testing, and maintaining software applications or systems to
-                    meet specific needs or solve problems. It involves various
-                    stages, including planning, coding. The process also
-                    includes ensuring the software is user-friendly, secure, and
-                    scalable.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-phone"></i></div>
-                  <h3>Mobile App Development</h3>
-                  <p>
-                    Mobile development creates apps for smartphones, enhancing
-                    convenience and functionality.<br />
-                    Mobile app examples: Instagram, WhatsApp, Spotify, Uber,
-                    Google Maps, TikTok, Amazon, Facebook, Snapchat.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-globe2"></i></div>
-                  <h3>Web Development</h3>
-                  <p>
-                    Building, designing, and maintaining websites involves a
-                    combination of web content creation, web design, client-side
-                    and server-side scripting, and database management. Examples
-                    include e-commerce sites like Amazon and informational sites
-                    like Wikipedia.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-
-              <!-- Card 4 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-people"></i></div>
-                  <h3>CRM Software Development</h3>
-                  <p>
-                    It is the tool or technique that helps companies make a
-                    healthy relationship with their customers by organizing the
-                    data and streamlining interactions across every touchpoint.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-
-              <!-- Card 5 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-palette"></i></div>
-                  <h3>UI / UX Designing</h3>
-                  <p>
-                    It increases the user experience and customer satisfaction,
-                    which ultimately increases the number of customers,
-                    resulting in the growth of the business through thoughtful,
-                    user-centered design.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-
-              <!-- Card 6 -->
-              <div class="service-card">
-                <div class="srv-box">
-                  <div class="icon-box"><i class="bi bi-megaphone"></i></div>
-                  <h3>Digital Marketing</h3>
-                  <p>
-                    It is a strategy that uses multiple channels to attract,
-                    engage and convert customers online — from SEO and social
-                    media to content marketing and paid campaigns.
-                  </p>
-                </div>
-                <a href="services.html"
-                  >Learn more <i class="bi bi-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-arrows">
-            <button type="button" id="servicesPrev" aria-label="Previous">
-              ←
-            </button>
-            <button type="button" id="servicesNext" aria-label="Next">→</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section trust-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <span class="section-label">WHY ETCHEDGE</span>
-            <h2>Technology Partner You Can Trust</h2>
-            <ul class="check-list">
-              <li>Agile development with transparent milestones</li>
-              <li>Dedicated teams of senior engineers and designers</li>
-              <li>
-                Industry-proven solutions across healthcare, retail & logistics
-              </li>
-              <li>Rapid prototyping to production in weeks, not months</li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-card">
-              <img
-                src="assets/whyEtechedge.png"
-                alt="trust-illustration"
-                class="img-fluid crdimg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section testimonials">
-      <div class="container">
-        <div class="section-title text-center">
-          <span class="section-label">CLIENT TESTIMONIALS</span>
-          <h2>What Our Clients Say</h2>
-          <p>
-            Don't just take our word for it, hear from the businesses we've
-            helped transform.
-          </p>
-        </div>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <b>★★★★★</b>
-              <p>
-                “EtechEdge transformed our inventory operations. The system is
-                fast, reliable, and our team adopted it within a week.”
-              </p>
-              <strong>Suresh Patel</strong
-              ><small>Operations Director, LogiCore</small>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <b>★★★★★</b>
-              <p>
-                “The mobile app they built for us exceeded every expectation.
-                Downloads crossed 50,000 in the first three months.”
-              </p>
-              <strong>Meena Krishnan</strong><small>CEO, RetailNow</small>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="testimonial-card">
-              <b>★★★★★</b>
-              <p>
-                “Professional, communicative, and technically exceptional.
-                EtechEdge is our go-to partner for all digital projects.”
-              </p>
-              <strong>Dr. Ravi Anand</strong
-              ><small>Medical Director, HealthBridge</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- cta section -->
-    <section class="cta-sec">
-      <div class="int-div">
-        <h2>
-          Let's Build Something <br /><span style="color: #0868f7"
-            >Extraordinary</span
-          >
-        </h2>
+  <!-- Authentic Products Interactive Section -->
+  <section class="section products-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-label">FLAGSHIP SOFTWARE</span>
+        <h2>EtechEdge Specialized Products</h2>
         <p>
-          Partner with EtechEdge to accelerate your digital transformation and
-          gain a competitive edge.
+          Explore our battle-tested enterprise products built for warehouses, healthcare, retail, and corporate
+          operations.
+        </p>
+      </div>
+
+      <!-- Product Switcher Tabs -->
+      <div class="product-nav-tabs">
+        <button class="product-tab-btn active" data-target="prod-inv">
+          <i class="bi bi-upc-scan me-1"></i> Inventory System
+        </button>
+        <button class="product-tab-btn" data-target="prod-store">
+          <i class="bi bi-cart3 me-1"></i> Online Store (Shresthbarcode)
+        </button>
+        <button class="product-tab-btn" data-target="prod-path">
+          <i class="bi bi-virus me-1"></i> Pathology Lab Software
+        </button>
+        <button class="product-tab-btn" data-target="prod-sales">
+          <i class="bi bi-graph-up-arrow me-1"></i> Sales Mgmt Solution
+        </button>
+        <button class="product-tab-btn" data-target="prod-grievance">
+          <i class="bi bi-chat-left-quote me-1"></i> Grievance Mgmt (GMS)
+        </button>
+        <button class="product-tab-btn" data-target="prod-hospital">
+          <i class="bi bi-hospital me-1"></i> Hospital Mgmt (HMS)
+        </button>
+      </div>
+
+      <!-- Product 1: Inventory -->
+      <div class="product-pane active" id="prod-inv">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">Warehouse & Supply Chain</span>
+              <h3>Customized Inventory System for Warehouse Management</h3>
+              <p>
+                A tailor-made solution engineered specifically for warehouse operations to efficiently manage
+                the flow of products, streamline barcode inventory tracking, and automate operational reporting.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Barcode Generation:</strong> Instant unique barcodes linked to customer references for
+                    quick scanning and label printing.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Real-time Product Tracking:</strong> Seamless tracking of incoming, outgoing, and
+                    in-hand inventory states.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Comprehensive Reporting:</strong> Generates automated incoming, outgoing, and current
+                    in-hand stock audit reports.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="https://etechedge.com/inv/html/pEntry" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary-custom">
+                  Open Application & Live Demo <i class="bi bi-box-arrow-up-right ms-2"></i>
+                </a>
+                <a href="products.html" class="btn btn-outline-custom">
+                  View Product Details
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">inv_sys_core.ts</small>
+                </div>
+                <div class="metric-box">
+                  <strong>100% Traceability</strong>
+                  <span>Unique barcode assigned per SKU package</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Real-time Ledger</strong>
+                  <span>Live status: Incoming | In-Hand | Dispatched</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Multi-Location Sync</strong>
+                  <span>Centralized audit and discrepancy reporting</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Online Store -->
+      <div class="product-pane" id="prod-store">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">E-Commerce & Retail</span>
+              <h3>Online Store & Barcode Hardware Commerce</h3>
+              <p>
+                Shop with ease, pay securely, and have products delivered right to your door. A turnkey
+                destination providing a seamless shopping experience with easy navigation, fast order processing,
+                and a rock-solid online payment gateway.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Specialized Product Catalog:</strong> Barcode scanners, thermal printers, and
+                    accessories.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Secure Online Payments:</strong> Integrated checkout with encrypted transaction
+                    processing.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Order Fulfillment Pipeline:</strong> Automated invoices, order notifications, and
+                    shipment tracking.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="https://shresthbarcode.com/product.php" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary-custom">
+                  Visit Shresthbarcode.com <i class="bi bi-box-arrow-up-right ms-2"></i>
+                </a>
+                <a href="https://shresthbarcode.com/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-outline-custom">
+                  Store Homepage
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">shresthbarcode_api.json</small>
+                </div>
+                <div class="metric-box">
+                  <strong>Fast Checkout</strong>
+                  <span>Frictionless product browsing & payment gateway</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Hardware Catalog</strong>
+                  <span>Direct inventory feed for scanners & thermal printers</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Secure SSL</strong>
+                  <span>Encrypted transactions and real-time order status</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Pathology Lab -->
+      <div class="product-pane" id="prod-path">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">Healthcare & Diagnostics</span>
+              <h3>Pathology Lab Software (Path Lab Solution)</h3>
+              <p>
+                Streamlining Diagnostics with Accuracy and Efficiency. Designed specifically for pathologists
+                and medical laboratory technicians to improve the speed and precision of patient diagnostic test
+                reporting.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Error-Free Data Entry:</strong> Standardized parameter templates with built-in normal
+                    range validation.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Automated Calculation:</strong> Dynamic result formulation eliminating manual
+                    computation errors.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Cloud-Based & Compliant:</strong> Secure patient history storage, real-time report
+                    generation, and customizable output.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="https://etechedge.com/L/html/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary-custom">
+                  Launch Path Lab Solution <i class="bi bi-box-arrow-up-right ms-2"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline-custom">
+                  Schedule Healthcare Demo
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">pathology_validation.py</small>
+                </div>
+                <div class="metric-box">
+                  <strong>99.9% Accuracy</strong>
+                  <span>Automated formula validation & abnormal flagging</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Instant Reports</strong>
+                  <span>PDF generation ready for digital dispatch</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Clinical Scalability</strong>
+                  <span>From local clinics to multi-branch diagnostic centers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Sales Management -->
+      <div class="product-pane" id="prod-sales">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">Sales Intelligence</span>
+              <h3>Sales Management Solution</h3>
+              <p>
+                Track and Manage Your Daily Sales with Ease. Simplify sales tracking, boost rep performance,
+                and make data-driven decisions to expand your business revenue.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Daily Transaction Tracking:</strong> Monitor team activity, closed orders, and pipeline
+                    progression.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Performance Analytics:</strong> Interactive revenue charts and rep quota
+                    attribution.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Intuitive Dashboard:</strong> Accessible from mobile or desktop for managers on the
+                    go.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="https://etechedge.com/ab/home.php" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary-custom">
+                  Open Sales Mgmt Tool <i class="bi bi-box-arrow-up-right ms-2"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline-custom">
+                  Request Customization
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">sales_analytics.sql</small>
+                </div>
+                <div class="metric-box">
+                  <strong>Real-time KPI Tracking</strong>
+                  <span>Daily revenue, rep targets, and conversion metrics</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Pipeline Visibility</strong>
+                  <span>Full lifecycle insight from quotation to settlement</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Executive Export</strong>
+                  <span>Instant CSV, Excel, and visual trend reports</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: Grievance Management -->
+      <div class="product-pane" id="prod-grievance">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">Governance & Operations</span>
+              <h3>Grievance Management System (GMS)</h3>
+              <p>
+                Efficient, Transparent, and Responsive Complaint Resolution. A centralized platform designed to help
+                institutions and enterprises systematically receive, assign, track, and resolve stakeholder complaints.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Transparent Ticketing:</strong> Auto-generated tracking ID for employees or
+                    customers.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>SLA & Escalation:</strong> Automated alerts when grievance tickets exceed assigned
+                    response windows.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Audit & Resolution Log:</strong> Complete tamper-proof trail from intake to final
+                    redressal.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="contact.html" class="btn btn-primary-custom">
+                  Request GMS Demo & Specs <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="products.html" class="btn btn-outline-custom">
+                  Explore Product Details
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">gms_workflow.bpmn</small>
+                </div>
+                <div class="metric-box">
+                  <strong>Accountability</strong>
+                  <span>Defined ownership per grievance category</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Turnaround SLA</strong>
+                  <span>Automated escalation to department heads</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Stakeholder Trust</strong>
+                  <span>Real-time SMS and email ticket status alerts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: Hospital Management -->
+      <div class="product-pane" id="prod-hospital">
+        <div class="product-showcase-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <span class="product-tag">Hospital & Healthcare IT</span>
+              <h3>Hospital Management System (HMS)</h3>
+              <p>
+                Optimizing Healthcare Operations for Better Patient Care. An all-in-one clinical administration
+                platform automating patient registrations, OPD/IPD scheduling, billing, pharmacy stock, and EHR records.
+              </p>
+              <ul class="product-features-list">
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Complete Patient Journey:</strong> Registration, doctor consults, lab orders, and
+                    discharge summaries.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Integrated Billing & Insurance:</strong> Transparent billing with multi-department
+                    itemization.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span><strong>Data Privacy & Standards:</strong> Role-based doctor/nurse access control ensuring
+                    HIPAA-grade security.</span>
+                </li>
+              </ul>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="contact.html" class="btn btn-primary-custom">
+                  Request HMS Deployment Demo <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a href="products.html" class="btn btn-outline-custom">
+                  Explore Healthcare Suite
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-visual-preview">
+                <div class="code-mockup-header">
+                  <span class="code-mockup-dot dot-red"></span>
+                  <span class="code-mockup-dot dot-yellow"></span>
+                  <span class="code-mockup-dot dot-green"></span>
+                  <small class="text-muted ms-2">hms_fhir_records.json</small>
+                </div>
+                <div class="metric-box">
+                  <strong>Integrated Operations</strong>
+                  <span>OPD, IPD, Diagnostics, and Pharmacy in one portal</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Doctor Care Focus</strong>
+                  <span>Reduces administrative desk burden significantly</span>
+                </div>
+                <div class="metric-box">
+                  <strong>Audit Compliance</strong>
+                  <span>Secure records adhering to medical health guidelines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section with Carousel & Direct Cards -->
+  <section class="section services-preview">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-label">SERVICES WE PROVIDE</span>
+        <h2>Comprehensive Technology Solutions</h2>
+        <p>
+          From custom enterprise software to mobile apps and digital marketing, we deliver end-to-end digital
+          capabilities.
+        </p>
+      </div>
+
+      <div class="services-carousel-wrapper">
+        <div class="services-carousel-viewport">
+          <div class="services-carousel-track" id="servicesTrack">
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+                <h3>Software Development</h3>
+                <p>
+                  Creating, designing, testing, and maintaining software applications tailored to automate operations,
+                  enhance productivity, and solve critical business bottlenecks.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-phone"></i></div>
+                <h3>Mobile App Development</h3>
+                <p>
+                  Native iOS, Android, and cross-platform apps (React Native, Flutter) providing seamless,
+                  intuitive mobile experiences for high user engagement.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-globe2"></i></div>
+                <h3>Website Development</h3>
+                <p>
+                  Building high-performance, responsive websites, e-commerce stores, and progressive web apps
+                  with modern frontend frameworks and robust backend architectures.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-people"></i></div>
+                <h3>CRM Software Development</h3>
+                <p>
+                  Custom CRM systems that organize customer data, streamline lead pipelines, and empower sales
+                  teams with actionable data for lasting customer relationships.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-palette"></i></div>
+                <h3>UI / UX Designing</h3>
+                <p>
+                  Human-centered interface and experience design that boosts customer satisfaction, retention,
+                  and conversion through clear user journeys and clean aesthetics.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="service-card">
+              <div>
+                <div class="icon-box"><i class="bi bi-megaphone"></i></div>
+                <h3>Digital Marketing</h3>
+                <p>
+                  Multi-channel online growth strategies including search engine optimization (SEO),
+                  conversion rate optimization, and targeted digital acquisition campaigns.
+                </p>
+              </div>
+              <a href="services.html" class="learn-more">
+                Explore Capabilities <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-arrows">
+          <button type="button" id="servicesPrev" aria-label="Previous service slide">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button type="button" id="servicesNext" aria-label="Next service slide">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section (Categorized & Interactive) -->
+  <section class="section tech-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-label">OUR EXPERTISE</span>
+        <h2>Technologies We Work With</h2>
+        <p>
+          Modern programming languages, enterprise frameworks, and platforms powering our client solutions.
+        </p>
+      </div>
+
+      <div class="tech-filter-bar">
+        <button class="tech-filter-btn active" data-filter="all">All Technologies</button>
+        <button class="tech-filter-btn" data-filter="frontend">Frontend & Web</button>
+        <button class="tech-filter-btn" data-filter="backend">Backend & APIs</button>
+        <button class="tech-filter-btn" data-filter="mobile">Mobile Platforms</button>
+        <button class="tech-filter-btn" data-filter="enterprise">Enterprise & Web3</button>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-item" data-category="backend">
+          <i class="bi bi-cup-hot"></i>
+          <span>Java</span>
+          <small>Enterprise & Spring</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-filetype-js"></i>
+          <span>JavaScript</span>
+          <small>Modern ES6+</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-triangle"></i>
+          <span>Vue.js</span>
+          <small>SPA Framework</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-shield"></i>
+          <span>Angular</span>
+          <small>Enterprise Web</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-diagram-3"></i>
+          <span>React</span>
+          <small>UI Architecture</small>
+        </div>
+        <div class="tech-item" data-category="backend">
+          <i class="bi bi-server"></i>
+          <span>Node.js</span>
+          <small>Microservices</small>
+        </div>
+        <div class="tech-item" data-category="backend">
+          <i class="bi bi-filetype-php"></i>
+          <span>PHP</span>
+          <small>Web Systems</small>
+        </div>
+        <div class="tech-item" data-category="backend">
+          <i class="bi bi-terminal"></i>
+          <span>Golang</span>
+          <small>High Performance</small>
+        </div>
+        <div class="tech-item" data-category="mobile">
+          <i class="bi bi-phone"></i>
+          <span>React Native</span>
+          <small>Cross-Platform</small>
+        </div>
+        <div class="tech-item" data-category="mobile">
+          <i class="bi bi-apple"></i>
+          <span>Swift</span>
+          <small>iOS Native</small>
+        </div>
+        <div class="tech-item" data-category="mobile">
+          <i class="bi bi-android2"></i>
+          <span>Kotlin</span>
+          <small>Android Native</small>
+        </div>
+        <div class="tech-item" data-category="enterprise">
+          <i class="bi bi-currency-bitcoin"></i>
+          <span>Solidity</span>
+          <small>Smart Contracts</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-filetype-html"></i>
+          <span>HTML5</span>
+          <small>Semantic Markup</small>
+        </div>
+        <div class="tech-item" data-category="frontend">
+          <i class="bi bi-filetype-css"></i>
+          <span>CSS3</span>
+          <small>Responsive Styling</small>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="technology.html" class="btn btn-outline-custom">
+          View Complete Tech Architecture <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why EtechEdge / Engineering Methodology -->
+  <section class="section why-etechedge">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-label">ENGINEERING EXCELLENCE</span>
+          <h2>Technology Partner You Can Rely On</h2>
+          <p>
+            We bring strategic thinking, rigorous engineering, and deep industry domain
+            knowledge to every software engagement.
+          </p>
+
+          <div class="feature-check-item">
+            <div class="feature-check-icon"><i class="bi bi-check-lg"></i></div>
+            <div class="feature-check-text">
+              <h4>Agile Delivery with Total Transparency</h4>
+              <p>Sprint-based execution with clear deliverables, weekly progress demos, and direct code access.</p>
+            </div>
+          </div>
+
+          <div class="feature-check-item">
+            <div class="feature-check-icon"><i class="bi bi-check-lg"></i></div>
+            <div class="feature-check-text">
+              <h4>Domain-Specific Industry Platforms</h4>
+              <p>Deep expertise in warehouse barcode logistics, clinical pathology workflows, and corporate operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-check-item">
+            <div class="feature-check-icon"><i class="bi bi-check-lg"></i></div>
+            <div class="feature-check-text">
+              <h4>Reliable & Scalable Architectures</h4>
+              <p>Architectures built to withstand real-world enterprise traffic with robust data backups and security
+                standards.</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <a href="about.html" class="btn btn-primary-custom">
+              Learn About Our Philosophy <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="image-showcase-wrapper">
+            <img src="assets/whyEtechedge.png" alt="EtechEdge Technology Collaboration" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section: Responsive Carousel / Slider matching PDF design -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-label">CLIENT VOICES</span>
+        <h2>Trusted by <span class="gradient-text">Forward-Thinking</span> Enterprises</h2>
+        <p>
+          Discover how EtechEdge transforms core business processes, drives operational agility, and creates measurable enterprise value.
+        </p>
+      </div>
+
+      <div class="testimonials-carousel-wrapper">
+        <div class="testimonials-carousel-viewport">
+          <div class="testimonials-carousel-track" id="testimonialsTrack">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-modern">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "EtechEdge completely revamped our diagnostics laboratory workflow. Our turn-around time dropped by 45% within the first month, and barcode integration eliminated manual entry errors completely."
+                </p>
+                <div class="client-meta">
+                  <div class="client-avatar me-3">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div>
+                    <h5 class="client-name mb-0">Dr. Rajeshwari Sharma</h5>
+                    <span class="client-role text-muted small">Director of Operations, MediCare Diagnostics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-modern">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Managing 12,000+ inventory SKUs across 4 distribution hubs was a bottleneck until EtechEdge deployed their smart inventory and serialization suite. Real-time accuracy is now above 99.8%."
+                </p>
+                <div class="client-meta">
+                  <div class="client-avatar me-3">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div>
+                    <h5 class="client-name mb-0">Vikram Malhotra</h5>
+                    <span class="client-role text-muted small">VP of Supply Chain, Apex Logistics Global</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-modern">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Their bespoke engineering team built our custom grievance redressal portal in record time. SLA compliance jumped from 68% to 94%, with seamless escalation matrices and citizen SMS alerts."
+                </p>
+                <div class="client-meta">
+                  <div class="client-avatar me-3">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div>
+                    <h5 class="client-name mb-0">Anita Deshmukh</h5>
+                    <span class="client-role text-muted small">Chief Technology Officer, SmartCity Solutions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card-modern">
+                <div class="stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "The customized web portal and API connectors EtechEdge delivered automated our order processing across multiple branches with zero downtime. Exceptional delivery speed and code quality."
+                </p>
+                <div class="client-meta">
+                  <div class="client-avatar me-3">
+                    <i class="bi bi-person-fill"></i>
+                  </div>
+                  <div>
+                    <h5 class="client-name mb-0">Rohan Varma</h5>
+                    <span class="client-role text-muted small">Head of Technology, RetailDirect India</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-carousel-dots d-flex align-items-center justify-content-center gap-2 mt-4" id="testimonialsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Exactly 5 Questions) -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="section-label">FREQUENTLY ASKED QUESTIONS</span>
+        <h2>Got Questions? <span class="gradient-text">We've Got Answers</span></h2>
+        <p>
+          Here are clear answers to commonly asked questions about our software development lifecycle, specialized products, and integration models.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="faq-accordion">
+            <div class="faq-item active">
+              <button class="faq-question" type="button" aria-expanded="true">
+                <span>How quickly can EtechEdge customize and deploy a specialized enterprise product?</span>
+                <i class="bi bi-chevron-down faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-content">
+                  Standard modules like our Inventory Management or Pathology Lab suite can be provisioned in as little as 3 to 7 business days. For tailored business logic, ERP integrations, or custom reporting pipelines, typical deployments complete within 2 to 4 weeks with full user onboarding and training.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can your software products integrate with our existing legacy ERP and database systems?</span>
+                <i class="bi bi-chevron-down faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-content">
+                  Yes, absolutely. Our solutions offer comprehensive REST and GraphQL APIs, webhook connectors, and secure database sync adaptors. Whether you operate on SAP, Oracle, Microsoft Dynamics, Tally, or custom legacy SQL servers, we ensure smooth bi-directional data synchronization.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What deployment options do you provide (Cloud vs. On-Premises)?</span>
+                <i class="bi bi-chevron-down faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-content">
+                  We support multi-cloud deployments (AWS, Azure, GCP, DigitalOcean) as well as private cloud and air-gapped on-premises server setups. All deployments adhere to enterprise-grade security standards with encrypted storage, role-based access control (RBAC), and automated backups.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What ongoing maintenance and technical support packages are available?</span>
+                <i class="bi bi-chevron-down faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-content">
+                  We offer flexible SLA-backed maintenance tiers ranging from 8x5 standard business support to 24/7 mission-critical coverage. Every package includes continuous security patching, performance monitoring, feature upgrades, and dedicated account engineering assistance.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How can we schedule a live product demonstration or feasibility consultation?</span>
+                <i class="bi bi-chevron-down faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-content">
+                  You can click the "Book a Free Demo" button on any page or contact us via WhatsApp, phone, or email. Our solution architects will schedule a 30-minute tailored walkthrough configured specifically to your operational requirements and workflows.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-sec">
+    <div class="container">
+      <div class="cta-box">
+        <span class="section-label">COLLABORATE WITH US</span>
+        <h2>Let's Build Something <span style="color: var(--accent-cyan);">Extraordinary</span></h2>
+        <p>
+          Partner with EtechEdge to accelerate your digital transformation and gain an enduring technological edge.
         </p>
         <div class="btn-div">
-          <a href="contact.html" class="btn btn-primary-custom"
-            >Book a Demo <i class="bi bi-arrow-right"></i></a
-          ><a href="about.html" class="btn btn-outline-custom"
-            >Learn About Us</a
-          >
+          <a href="contact.html" class="btn btn-primary-custom cta-booking-btn">
+            Book a Free Demo <i class="bi bi-calendar-event ms-2"></i>
+          </a>
+          <a href="products.html" class="btn btn-outline-custom">
+            Explore Product Demos
+          </a>
         </div>
       </div>
-    </section>
-<hr style="color: #0868f7;" />
-    <footer class="footer">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <a class="footer-brand" href="index.html"
-              ><img
-                src="assets/comp-logo.png"
-                alt="comp-logo"
-                class="img-logo img-fluid"
-            /></a>
-            <p>
-              Empowering businesses with cutting-edge IT solutions, digital
-              transformation, and innovative software development.
-            </p>
-            <div class="socials">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-            </div>
-          </div>
-          <div class="col-6 col-lg-3">
-            <h4>Services</h4>
-            <a href="services.html">Software Development</a
-            ><a href="services.html">Mobile Apps</a>
-            <a href="services.html">Web Development</a
-            ><a href="services.html">UI/UX Design</a>
-            <a href="services.html">Digital Marketing</a
-            ><a href="services.html">CRM Solutions</a>
-          </div>
-          <div class="col-6 col-lg-2">
-            <h4>Company</h4>
-            <a href="about.html">About Us</a
-            ><a href="case-studies.html">Case Studies</a>
-            <a href="blog.html">Blog</a><a href="#">Careers</a
-            ><a href="contact.html">Contact</a>
-          </div>
-          <div class="col-lg-3">
-            <h4>Contact</h4>
-            <a href="mailto:info@etechedge.com"
-              ><i class="bi bi-envelope"></i> info@etechedge.com</a
-            >
-            <a href="tel:+917338357002"
-              ><i class="bi bi-telephone"></i> +91-7338357002</a
-            >
-            <a href="#"><i class="bi bi-geo-alt"></i> India</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="footer-brand" href="index.html">
+            <img src="assets/comp-logo.png" alt="EtechEdge Solutions" class="img-logo img-fluid" />
+          </a>
+          <p class="mt-3">
+            Empowering businesses with cutting-edge IT solutions, digital transformation, and specialized enterprise
+            software.
+          </p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/company/etechedge" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/etechedge" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/etechedge" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>© 2026 EtechEdge Solutions. All rights reserved.</span>
-          <span
-            ><a href="#">Privacy Policy</a> &nbsp;&nbsp;
-            <a href="#">Terms of Service</a></span
-          >
+        <div class="col-6 col-lg-3">
+          <h4>Our Products</h4>
+          <a href="products.html#inventory">Inventory System</a>
+          <a href="https://shresthbarcode.com/product.php" target="_blank" rel="noopener noreferrer">Online Store
+            (Shresthbarcode)</a>
+          <a href="products.html#pathology">Pathology Lab Software</a>
+          <a href="products.html#sales">Sales Management Tool</a>
+          <a href="products.html#grievance">Grievance Management</a>
+          <a href="products.html#hospital">Hospital Management (HMS)</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="technology.html">Technologies</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="careers.html">Careers</a>
+          <a href="blog.html">Blog & Insights</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col-lg-3">
+          <h4>Contact Details</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span><a href="mailto:info@etechedge.com" class="d-inline p-0 m-0">info@etechedge.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span><a href="tel:+917338357002" class="d-inline p-0 m-0">+91-7338357002</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>India (Serving Clients Worldwide)</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <span>Mon - Fri: 9:00 AM - 6:30 PM IST</span>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom">
+        <span>&copy; 2026 EtechEdge Solutions. All rights reserved.</span>
+        <span>
+          <a href="contact.html" class="d-inline">Inquiry</a> &nbsp;|&nbsp;
+          <a href="about.html" class="d-inline">Company</a> &nbsp;|&nbsp;
+          <a href="products.html" class="d-inline">Live Demos</a>
+        </span>
+      </div>
+    </div>
+  </footer>
 
-    <button id="backTop" class="back-top" aria-label="Back to top">
-      <i class="bi bi-arrow-up"></i>
+  <!-- Floating Theme Toggle (Bottom-Left) -->
+  <div class="floating-theme-toggle">
+    <button type="button" class="theme-single-toggle-btn" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
+      <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+      <span class="theme-label-text">Dark</span>
     </button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <div class="floating-actions">
+    <a href="https://wa.me/917338357002?text=Hello%20EtechEdge%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
+      class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with EtechEdge">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <button id="backTop" class="back-top-btn" aria-label="Scroll back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

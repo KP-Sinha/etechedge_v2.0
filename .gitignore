@@ -1,0 +1,15 @@
+﻿# Environment / Local Server Configuration
+.env
+.env.local
+.env.*.local
+*.log
+
+# Dependencies
+vendor/
+node_modules/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

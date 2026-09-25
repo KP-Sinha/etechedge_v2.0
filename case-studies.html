@@ -3,273 +3,291 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="EtechEdge Solutions - IT & Digital Solutions"
-    />
-    <title>Case Studies | EtechEdge</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Explore real-world case studies of EtechEdge software implementations in warehouse logistics, medical pathology diagnostics, and retail e-commerce." />
+    <meta name="author" content="EtechEdge Solutions" />
+    <link rel="canonical" href="https://kp-sinha.github.io/etechedge/case-studies.html" />
+    <meta property="og:title" content="Case Studies | EtechEdge Solutions" />
+    <meta property="og:description" content="Explore real-world case studies of EtechEdge software implementations in warehouse logistics, medical pathology diagnostics, and retail e-commerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kp-sinha.github.io/etechedge/case-studies.html" />
+    <meta property="og:image" content="https://kp-sinha.github.io/etechedge/assets/comp-logo.png" />
+    <title>Case Studies | EtechEdge Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-  </head>
+  <link rel="stylesheet" href="css/media.css" />
+    <script>
+    (function () {
+      var saved = localStorage.getItem("etechedge_theme");
+      if (saved !== "dark") {
+        document.documentElement.setAttribute("data-theme", "mverve");
+      }
+    })();
+  </script>
+</head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img
-            src="assets/comp-logo.png"
-            alt="comp-logo"
-            class="img-logo img-fluid"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/comp-logo.png" alt="EtechEdge Logo" class="img-logo img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav mx-auto align-items-lg-center">
-            <li>
-              <a class="nav-link" data-page="home" href="index.html">Home</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="about" href="about.html">About</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="services" href="services.html"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                data-page="case-studies"
-                href="case-studies.html"
-                >Case Studies</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" data-page="blog" href="blog.html">Blog</a>
-            </li>
-            <li>
-              <a class="nav-link" data-page="contact" href="contact.html"
-                >Contact</a
-              >
-            </li>
+            <li class="nav-item"><a class="nav-link" data-page="home" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="about" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="services" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="products" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="technology" href="technology.html">Technology</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="case-studies" href="case-studies.html">Case Studies</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="careers" href="careers.html">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" data-page="blog" href="blog.html">Blogs</a></li>
           </ul>
-          <a
-            class="btn btn-primary-custom d-none d-lg-inline-flex"
-            href="contact.html"
-            >Book a Demo <i class="bi bi-arrow-right ms-2"></i
-          ></a>
+          <a class="btn btn-primary-custom d-none d-lg-inline-flex" href="contact.html">
+            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        <div class="nav-mobile-cta d-lg-none">
+          <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
+            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
         </div>
       </div>
     </nav>
 
-    <section class="inner-hero cases-hero">
+    <section class="inner-hero page-hero-case-studies">
       <div class="container">
-        <span class="eyebrow">CASE STUDIES</span>
-        <h1>Proven Results, Real<br />Impact</h1>
+        <div class="breadcrumb-custom">
+          <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <span class="active">Case Studies</span>
+        </div>
+        <span class="section-label">REAL-WORLD IMPACT</span>
+        <h1>Proven Solutions, Measurable Results</h1>
         <p>
-          See how we've helped businesses transform operations, increase
-          efficiency,<br class="d-none d-md-block" />
-          and achieve measurable growth.
+          Discover how EtechEdge engineered purpose-built systems that eliminated errors, accelerated operations, and solved mission-critical problems for our clients.
         </p>
-      </div>
-    </section>
-    <section class="stats-strip">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-6 col-lg-3">
-            <strong>150+</strong><span>Projects Delivered</span>
-          </div>
-          <div class="col-6 col-lg-3">
-            <strong>50+</strong><span>Clients Served</span>
-          </div>
-          <div class="col-6 col-lg-3">
-            <strong>4</strong><span>Industries</span>
-          </div>
-          <div class="col-6 col-lg-3">
-            <strong>98%</strong><span>On-Time Delivery</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section-title text-center">
-          <span class="section-label">OUR WORK</span>
-          <h2>Featured Case Studies</h2>
-          <p>
-            Swipe through our most impactful projects and see the results we
-            deliver.
-          </p>
-        </div>
-        <div class="row g-3">
-          <div class="col-lg-6">
-            <article class="case-card">
-              <div class="case-metric">
-                <div class="icon-box"><i class="bi bi-clipboard-data"></i></div>
-                <strong>40%</strong><small>LESS ERRORS</small>
-              </div>
-              <div class="case-body">
-                <div class="tags">
-                  <span>ENTERPRISE SOFTWARE</span><span>BARCODE SYSTEM</span
-                  ><span>REPORTING</span>
-                </div>
-                <h3>Warehouse Inventory System</h3>
-                <small>Logistics Enterprise — Supply Chain & Logistics</small>
-                <div class="case-box">
-                  <b>Challenge</b>
-                  <p>
-                    Manual inventory tracking led to stock discrepancies,
-                    delayed shipments, and poor visibility across multiple
-                    warehouse locations.
-                  </p>
-                </div>
-                <div class="case-box">
-                  <b>Solution</b>
-                  <p>
-                    Built a custom inventory management system with barcode
-                    generation, real-time product tracking, and comprehensive
-                    reporting dashboards.
-                  </p>
-                </div>
-                <h4>↗ Key Results</h4>
-                <div class="result-pills">
-                  <span>✓ 40% reduction in stock discrepancies</span
-                  ><span>✓ 3x faster order fulfillment</span
-                  ><span>✓ Real-time visibility across all locations</span>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-6">
-            <article class="case-card">
-              <div class="case-metric gray-metric">
-                <div class="icon-box"><i class="bi bi-heart-pulse"></i></div>
-                <strong>99.9%</strong><small>ACCURACY</small>
-              </div>
-              <div class="case-body">
-                <div class="tags">
-                  <span>HEALTHCARE</span><span>CLOUD-BASED</span
-                  ><span>COMPLIANCE</span>
-                </div>
-                <h3>Pathology Lab Software</h3>
-                <small>Healthcare Provider — Healthcare & Diagnostics</small>
-                <div class="case-box">
-                  <b>Challenge</b>
-                  <p>
-                    Manual data entry caused errors in diagnostic reports,
-                    delayed patient results, and compliance risks.
-                  </p>
-                </div>
-                <div class="case-box">
-                  <b>Solution</b>
-                  <p>
-                    Developed a cloud-based pathology software with automated
-                    calculations, result validation, real-time report
-                    generation, and HIPAA-compliant data handling.
-                  </p>
-                </div>
-                <h4>↗ Key Results</h4>
-                <div class="result-pills">
-                  <span>✓ 99.9% accuracy in test reporting</span
-                  ><span>✓ 60% faster report turnaround</span
-                  ><span>✓ Full regulatory compliance</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="carousel-arrows"><button>←</button><button>→</button></div>
-      </div>
-    </section>
-    <!-- cta section -->
-    <section class="cta-sec">
-      <div class="int-div">
-        <h2>Your Success Story Starts Here</h2>
-        <p>
-          Let's discuss how we can deliver similar results for your business.
-        </p>
-        <a href="contact.html" class="btn btn-primary-custom"
-          >Book a Demo <i class="bi bi-arrow-right"></i
-        ></a>
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="case-card-modern">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+              <div class="d-flex gap-2 mb-3">
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">SUPPLY CHAIN</span>
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">BARCODE AUTOMATION</span>
+              </div>
+              <h3>Warehouse Management: Automated Barcode Inventory System</h3>
+              <p class="text-muted"><strong>Client Context:</strong> Regional logistics and distribution warehouse managing thousands of daily inbound and outbound SKUs.</p>
+              <div class="p-3 my-3 case-challenge-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--accent-cyan); border-radius: 4px;">
+                <strong>The Challenge:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">Manual paper and spreadsheet logging led to stock discrepancies, misplaced packages, delayed shipments, and lack of real-time visibility across in-hand warehouse stock.</p>
+              </div>
+              <div class="p-3 my-3 case-solution-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--primary-blue); border-radius: 4px;">
+                <strong>The EtechEdge Solution:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">We architected and deployed our tailored Inventory System with instantaneous barcode label generation linked directly to customer references, barcode scanner integration, and automated incoming/outgoing stock ledger reporting.</p>
+              </div>
+              <div class="d-flex gap-3 flex-wrap mt-4">
+                <a href="https://etechedge.com/inv/html/pEntry" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+                  View Live Application Demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>40%</strong>
+                <span>REDUCTION IN DISCREPANCIES</span>
+              </div>
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>3x</strong>
+                <span>FASTER ORDER VERIFICATION</span>
+              </div>
+              <div class="case-metric-badge w-100">
+                <strong>100%</strong>
+                <span>REAL-TIME IN-HAND AUDIT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card-modern">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+              <div class="d-flex gap-2 mb-3">
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">HEALTHCARE</span>
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">DIAGNOSTICS</span>
+              </div>
+              <h3>Pathology Services: Automated Medical Calculation & Report Generation</h3>
+              <p class="text-muted"><strong>Client Context:</strong> Busy medical diagnostic laboratory handling hundreds of routine blood and tissue test panels daily.</p>
+              <div class="p-3 my-3 case-challenge-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--accent-cyan); border-radius: 4px;">
+                <strong>The Challenge:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">Technicians spent hours manually calculating derived hematological parameters and typing results into generic word processors, creating risk of typographical inaccuracies and delayed patient reporting.</p>
+              </div>
+              <div class="p-3 my-3 case-solution-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--primary-blue); border-radius: 4px;">
+                <strong>The EtechEdge Solution:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">We developed Path Lab Solution, incorporating structured input validation, automated calculation formulas, standard biological range flagging, and one-click PDF generation ready for digital dispatch.</p>
+              </div>
+              <div class="d-flex gap-3 flex-wrap mt-4">
+                <a href="https://etechedge.com/L/html/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+                  View Live Lab Demo <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>99.9%</strong>
+                <span>REPORTING ACCURACY</span>
+              </div>
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>60%</strong>
+                <span>FASTER TURNAROUND TIME</span>
+              </div>
+              <div class="case-metric-badge w-100">
+                <strong>Zero</strong>
+                <span>FORMULA COMPUTATION ERRORS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card-modern">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-8">
+              <div class="d-flex gap-2 mb-3">
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">E-COMMERCE</span>
+                <span class="badge" style="background: rgba(8,104,247,0.15); color: var(--accent-cyan); border: 1px solid rgba(8,104,247,0.3); padding: 5px 12px; border-radius: 4px;">RETAIL HARDWARE</span>
+              </div>
+              <h3>Shresthbarcode.com: Turnkey Barcode Hardware Commerce</h3>
+              <p class="text-muted"><strong>Client Context:</strong> Direct-to-consumer and B2B vendor of barcode scanners, thermal printers, and accessories.</p>
+              <div class="p-3 my-3 case-challenge-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--accent-cyan); border-radius: 4px;">
+                <strong>The Challenge:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">The merchant lacked an accessible digital storefront to showcase specialized barcode equipment, collect secure online payments, and automate invoice creation.</p>
+              </div>
+              <div class="p-3 my-3 case-solution-box" style="background: rgba(4,7,15,0.5); border-left: 3px solid var(--primary-blue); border-radius: 4px;">
+                <strong>The EtechEdge Solution:</strong>
+                <p class="mb-0 text-muted" style="font-size: 14px;">Delivered an optimized e-commerce portal with structured product categorizations, fast order processing, and payment gateway integration.</p>
+              </div>
+              <div class="d-flex gap-3 flex-wrap mt-4">
+                <a href="https://shresthbarcode.com/product.php" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+                  Visit Shresthbarcode Store <i class="bi bi-box-arrow-up-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>100%</strong>
+                <span>TRANSACTION SECURITY</span>
+              </div>
+              <div class="case-metric-badge mb-3 w-100">
+                <strong>Instant</strong>
+                <span>DIGITAL INVOICE CREATION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-sec">
+      <div class="container">
+        <div class="cta-box">
+          <span class="section-label">COLLABORATE</span>
+          <h2>Achieve Measurable Success for Your Business</h2>
+          <p>Let's discuss how we can build an automated, reliable system tailored to your industry.</p>
+          <div class="btn-div">
+            <a href="contact.html" class="btn btn-primary-custom cta-booking-btn">Book a Consultation <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="products.html" class="btn btn-outline-custom">Explore Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-4">
-            <a class="footer-brand" href="index.html"
-              ><img
-                src="assets/comp-logo.png"
-                alt="comp-logo"
-                class="img-logo img-fluid"
-            /></a>
-            <p>
-              Empowering businesses with cutting-edge IT solutions, digital
-              transformation, and innovative software development.
+            <a class="footer-brand" href="index.html">
+              <img src="assets/comp-logo.png" alt="EtechEdge Solutions" class="img-logo img-fluid" />
+            </a>
+            <p class="mt-3">
+              Empowering businesses with cutting-edge IT solutions, digital transformation, and specialized enterprise software.
             </p>
             <div class="socials">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/company/etechedge" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.facebook.com/etechedge" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/etechedge" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
           <div class="col-6 col-lg-3">
-            <h4>Services</h4>
-            <a href="services.html">Software Development</a
-            ><a href="services.html">Mobile Apps</a>
-            <a href="services.html">Web Development</a
-            ><a href="services.html">UI/UX Design</a>
-            <a href="services.html">Digital Marketing</a
-            ><a href="services.html">CRM Solutions</a>
+            <h4>Our Products</h4>
+            <a href="products.html#inventory">Inventory System</a>
+            <a href="https://shresthbarcode.com/product.php" target="_blank" rel="noopener noreferrer">Online Store (Shresthbarcode)</a>
+            <a href="products.html#pathology">Pathology Lab Software</a>
+            <a href="products.html#sales">Sales Management Tool</a>
+            <a href="products.html#grievance">Grievance Management</a>
+            <a href="products.html#hospital">Hospital Management (HMS)</a>
           </div>
           <div class="col-6 col-lg-2">
-            <h4>Company</h4>
-            <a href="about.html">About Us</a
-            ><a href="case-studies.html">Case Studies</a>
-            <a href="blog.html">Blog</a><a href="#">Careers</a
-            ><a href="contact.html">Contact</a>
+            <h4>Quick Links</h4>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="technology.html">Technologies</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="careers.html">Careers</a>
+            <a href="blog.html">Blog & Insights</a>
+            <a href="contact.html">Contact Us</a>
           </div>
           <div class="col-lg-3">
-            <h4>Contact</h4>
-            <a href="mailto:info@etechedge.com"
-              ><i class="bi bi-envelope"></i> info@etechedge.com</a
-            >
-            <a href="tel:+917338357002"
-              ><i class="bi bi-telephone"></i> +91-7338357002</a
-            >
-            <a href="#"><i class="bi bi-geo-alt"></i> India</a>
+            <h4>Contact Details</h4>
+            <div class="footer-contact-item">
+              <i class="bi bi-envelope"></i>
+              <span><a href="mailto:info@etechedge.com" class="d-inline p-0 m-0">info@etechedge.com</a></span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-telephone"></i>
+              <span><a href="tel:+917338357002" class="d-inline p-0 m-0">+91-7338357002</a></span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-geo-alt"></i>
+              <span>India (Serving Clients Worldwide)</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-clock"></i>
+              <span>Mon - Fri: 9:00 AM - 6:30 PM IST</span>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>© 2026 EtechEdge Solutions. All rights reserved.</span>
-          <span
-            ><a href="#">Privacy Policy</a> &nbsp;&nbsp;
-            <a href="#">Terms of Service</a></span
-          >
+          <span>&copy; 2026 EtechEdge Solutions. All rights reserved.</span>
+          <span>
+            <a href="contact.html" class="d-inline">Inquiry</a> &nbsp;|&nbsp;
+            <a href="about.html" class="d-inline">Company</a> &nbsp;|&nbsp;
+            <a href="products.html" class="d-inline">Live Demos</a>
+          </span>
         </div>
       </div>
     </footer>
 
-    <button id="backTop" class="back-top" aria-label="Back to top">
-      <i class="bi bi-arrow-up"></i>
-    </button>
+    <!-- Floating Theme Toggle (Bottom-Left) -->
+    <div class="floating-theme-toggle">
+      <button type="button" class="theme-single-toggle-btn" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
+        <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+        <span class="theme-label-text">Dark</span>
+      </button>
+    </div>
+
+    <div class="floating-actions">
+      <a href="https://wa.me/917338357002?text=Hello%20EtechEdge%20Team,%20I%20am%20interested%20in%20your%20software%20solutions." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with EtechEdge">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <button id="backTop" class="back-top-btn" aria-label="Scroll back to top">
+        <i class="bi bi-chevron-up"></i>
+      </button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
