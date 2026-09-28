@@ -127,17 +127,30 @@ document.addEventListener("DOMContentLoaded", () => {
     startSlideShow();
   }
 
-  // Interactive Product Tabs with Automatic Rotation & Hover Pause
+  // Interactive Product Tabs with Automatic Rotation & Non-breaking Mobile Auto-Switch
   const productTabBtns = document.querySelectorAll(".product-tab-btn");
   const productPanes = document.querySelectorAll(".product-pane");
+  const prodTabsContainer = document.querySelector(".product-nav-tabs");
   if (productTabBtns.length > 0) {
     let currentProdIndex = 0;
     let prodAutoInterval = null;
+    let interactionResumeTimeout = null;
 
     function activateProductTab(index) {
       currentProdIndex = (index + productTabBtns.length) % productTabBtns.length;
       productTabBtns.forEach((b, i) => {
-        b.classList.toggle("active", i === currentProdIndex);
+        const isActive = i === currentProdIndex;
+        b.classList.toggle("active", isActive);
+        if (isActive && prodTabsContainer && window.innerWidth <= 767) {
+          // Scroll active tab into view horizontally smoothly on mobile
+          const tabLeft = b.offsetLeft;
+          const tabWidth = b.offsetWidth;
+          const containerWidth = prodTabsContainer.clientWidth;
+          prodTabsContainer.scrollTo({
+            left: tabLeft - (containerWidth / 2) + (tabWidth / 2),
+            behavior: "smooth"
+          });
+        }
       });
       productPanes.forEach((p) => p.classList.remove("active"));
 
@@ -162,18 +175,39 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    function handleUserInteraction() {
+      stopProdAutoplay();
+      if (interactionResumeTimeout) {
+        clearTimeout(interactionResumeTimeout);
+      }
+      // Ensure autoplay resumes automatically after 5s regardless of interaction
+      interactionResumeTimeout = setTimeout(() => {
+        startProdAutoplay();
+      }, 5000);
+    }
+
     productTabBtns.forEach((btn, idx) => {
       btn.addEventListener("click", () => {
         activateProductTab(idx);
-        startProdAutoplay();
+        handleUserInteraction();
       });
     });
 
-    // Pause on hover over tabs and content area; resume on mouse leave
+    // Pause on hover over tabs and content area on non-touch devices; resume on mouse leave
     const prodSection = document.querySelector(".products-section");
     if (prodSection) {
-      prodSection.addEventListener("mouseenter", stopProdAutoplay);
-      prodSection.addEventListener("mouseleave", startProdAutoplay);
+      prodSection.addEventListener("mouseenter", () => {
+        // Only pause if device supports hover (avoid sticky pause on touch devices)
+        if (window.matchMedia("(hover: hover)").matches) {
+          stopProdAutoplay();
+        }
+      });
+      prodSection.addEventListener("mouseleave", () => {
+        if (window.matchMedia("(hover: hover)").matches) {
+          startProdAutoplay();
+        }
+      });
+      prodSection.addEventListener("touchstart", handleUserInteraction, { passive: true });
     }
 
     startProdAutoplay();
@@ -607,19 +641,19 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("etechedge_theme", "mverve");
     }
 
-    // Update floating toggle buttons:
-    // When Light Mode is active -> button prompts to switch to "Dark"
-    // When Dark Mode is active -> button prompts to switch to "Light"
+    // Update header toggle buttons:
+    // When Light Mode is active -> button displays moon to switch to Dark
+    // When Dark Mode is active -> button displays sun to switch to Light
     document.querySelectorAll(".theme-single-toggle-btn").forEach((btn) => {
       const label = btn.querySelector(".theme-label-text");
       const icon = btn.querySelector(".theme-icon-wrap i");
       if (theme === "dark") {
-        if (label) label.textContent = "Light";
+        if (label) label.textContent = "";
         if (icon) icon.className = "bi bi-brightness-high";
         btn.setAttribute("title", "Switch to Light Mode");
         btn.setAttribute("aria-label", "Switch to Light Mode");
       } else {
-        if (label) label.textContent = "Dark";
+        if (label) label.textContent = "";
         if (icon) icon.className = "bi bi-moon-stars";
         btn.setAttribute("title", "Switch to Dark Mode");
         btn.setAttribute("aria-label", "Switch to Dark Mode");

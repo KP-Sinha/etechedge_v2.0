@@ -48,33 +48,92 @@
             <li class="nav-item"><a class="nav-link" data-page="careers" href="careers.html">Careers</a></li>
             <li class="nav-item"><a class="nav-link" data-page="blog" href="blog.html">Blogs</a></li>
           </ul>
-          <a class="btn btn-primary-custom d-none d-lg-inline-flex" href="contact.html">
-            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        <div class="nav-mobile-cta d-lg-none">
-          <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
-            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        </div>
+          <div class="d-none d-lg-flex align-items-center gap-3">
+            <a class="btn btn-primary-custom" href="contact.html">
+              Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <button type="button" class="theme-single-toggle-btn header-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+              <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+            </button>
+          </div>
+          <div class="nav-mobile-cta d-lg-none d-flex align-items-center gap-2">
+            <button type="button" class="theme-single-toggle-btn header-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+              <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+            </button>
+            <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
+              Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <section class="inner-hero page-hero-services">
-      <div class="container">
-        <div class="breadcrumb-custom">
-          <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <span class="active">Services</span>
+    <section class="inner-hero page-hero-services services-immersive-hero">
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="row align-items-center g-5 py-3">
+          <div class="col-lg-6 services-hero-content">
+            <div class="breadcrumb-custom">
+              <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <span>Services</span> <i class="bi bi-circle-fill hero-crumb-dot"></i> <span class="active section-label-inline">END-TO-END CAPABILITIES</span>
+            </div>
+            <h1 class="services-hero-heading">
+              Comprehensive IT &amp; <span class="text-gradient-cyan">Digital Services</span>
+            </h1>
+            <p class="services-hero-subtext">
+              We engineer scalable software, mobile apps, and digital experiences that modernize operations, engage customers, and foster business expansion.
+            </p>
+            <div class="services-hero-actions">
+              <a href="#services-list" class="btn btn-primary-custom services-primary-btn">
+                Explore Our Services <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a href="#capabilities-section" class="btn btn-outline-custom services-secondary-btn">
+                Our Capabilities <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 services-hero-visual-col text-center">
+            <div class="services-hero-artwork-wrapper">
+              <img src="assets/services-hero-dark.jpg" alt="Comprehensive Cloud IT and Digital Services Infrastructure" class="services-hero-graphic services-hero-dark-img img-fluid" />
+              <img src="assets/services-hero-light.jpg" alt="Comprehensive Cloud IT and Digital Services Infrastructure" class="services-hero-graphic services-hero-light-img img-fluid" />
+            </div>
+          </div>
         </div>
-        <span class="section-label">END-TO-END CAPABILITIES</span>
-        <h1>Comprehensive IT & Digital Services</h1>
-        <p>
-          We engineer scalable software, mobile apps, and digital experiences that modernize operations, engage customers, and foster business expansion.
-        </p>
+
+        <!-- 4-Pillar Feature Bar below Hero Content -->
+        <div class="services-hero-pillars-bar">
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="bi bi-rocket-takeoff"></i></div>
+            <div class="pillar-text">
+              <strong>Faster Innovation</strong>
+              <span>Build for what's next</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="bi bi-shield-check"></i></div>
+            <div class="pillar-text">
+              <strong>Stronger Security</strong>
+              <span>Your data, our priority</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="bi bi-lightning-charge"></i></div>
+            <div class="pillar-text">
+              <strong>Higher Performance</strong>
+              <span>Optimized for growth</span>
+            </div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon"><i class="bi bi-people"></i></div>
+            <div class="pillar-text">
+              <strong>Better Customer Experiences</strong>
+              <span>Engage. Retain. Grow.</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Services Overview & Architecture Intro -->
-    <section class="section pb-0">
+    <section class="section pb-0" id="capabilities-section">
       <div class="container">
         <div class="row align-items-center g-5 mb-5">
           <div class="col-lg-6">
@@ -109,7 +168,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="services-list">
       <div class="container">
         <!-- Stacking Services Cards Container -->
         <div class="services-stacked-container">
@@ -380,13 +439,6 @@
       </div>
     </footer>
 
-    <!-- Floating Theme Toggle (Bottom-Left) -->
-    <div class="floating-theme-toggle">
-      <button type="button" class="theme-single-toggle-btn" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
-        <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
-        <span class="theme-label-text">Dark</span>
-      </button>
-    </div>
 
     <div class="floating-actions">
       <a href="https://wa.me/917338357002?text=Hello%20EtechEdge%20Team,%20I%20am%20interested%20in%20your%20software%20solutions." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with EtechEdge">

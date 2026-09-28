@@ -188,8 +188,8 @@ img, svg, video, canvas, audio, iframe {
 
   [data-theme="mverve"] .nav-link:hover,
   [data-theme="mverve"] .nav-link:focus {
-    background: rgba(91, 33, 112, 0.08) !important;
-    color: #5b2170 !important;
+    background: rgba(3, 74, 208, 0.08) !important;
+    color: var(--accent-primary, #034ad0) !important;
   }
 
   [data-theme="mverve"] .nav-mobile-cta {
@@ -389,6 +389,87 @@ img, svg, video, canvas, audio, iframe {
   }
 }
 
+/* Services Immersive Hero Responsive */
+@media (max-width: 991px) {
+  .services-immersive-hero {
+    padding: 110px 0 45px;
+    text-align: center;
+  }
+  .services-hero-content {
+    margin-bottom: 25px;
+  }
+  .services-hero-subtext {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-hero-actions {
+    justify-content: center;
+  }
+  .services-hero-pillars-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    padding: 20px 24px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services-immersive-hero {
+    padding: 95px 0 35px;
+  }
+  .services-hero-heading {
+    font-size: 2.1rem;
+    line-height: 1.18;
+  }
+  .services-hero-subtext {
+    font-size: 1rem;
+  }
+  .services-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .services-hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .services-hero-pillars-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px 20px;
+    margin-top: 25px;
+    border-radius: 18px;
+    text-align: left;
+  }
+  .pillar-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  .pillar-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 19px;
+  }
+  .pillar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .pillar-text strong {
+    font-size: 14px;
+    text-align: left;
+  }
+  .pillar-text span {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
 /* Trust / Value Strip */
 @media (max-width: 767px) {
   .trust-strip {
@@ -425,7 +506,10 @@ img, svg, video, canvas, audio, iframe {
 }
 
 @media (max-width: 767px) {
-  .services-carousel-viewport,
+  .services-carousel-viewport {
+    padding: 18px 6px 20px;
+    margin-top: 10px;
+  }
   .testimonials-carousel-viewport {
     padding: 8px 4px 18px;
   }
@@ -515,18 +599,38 @@ img, svg, video, canvas, audio, iframe {
 
 @media (max-width: 767px) {
   .product-nav-tabs {
-    gap: 3px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
+    gap: 8px;
+    padding: 4px 6px 14px;
+    margin-bottom: 18px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    justify-content: flex-start;
+  }
+  .product-nav-tabs::-webkit-scrollbar {
+    display: none;
   }
   .product-tab-btn {
-    padding: 6px 3px;
-    font-size: 10px;
+    flex: 0 0 auto;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: var(--radius-full);
   }
   .product-tab-btn i {
-    font-size: 11px;
-    margin-right: 2px !important;
+    font-size: 13px;
+    margin-right: 5px !important;
+  }
+  .product-pane {
+    display: none;
+  }
+  .product-pane.active {
+    display: block;
+    animation: tabFadeMobile 0.4s ease-out forwards;
+  }
+  @keyframes tabFadeMobile {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
   }
   .product-showcase-card {
     padding: 26px 20px;
@@ -786,19 +890,13 @@ input, select, textarea {
     right: 18px;
     gap: 10px;
   }
-  .floating-theme-toggle {
-    bottom: 20px;
-    left: 18px;
-  }
   .theme-single-toggle-btn {
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
   }
   .theme-single-toggle-btn .theme-icon-wrap {
-    font-size: 17px;
-  }
-  .theme-single-toggle-btn .theme-label-text {
-    font-size: 9px;
+    font-size: 15px;
   }
   .whatsapp-float {
     width: 48px;
@@ -818,19 +916,13 @@ input, select, textarea {
     right: 14px;
     gap: 8px;
   }
-  .floating-theme-toggle {
-    bottom: 16px;
-    left: 14px;
-  }
   .theme-single-toggle-btn {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
   }
   .theme-single-toggle-btn .theme-icon-wrap {
-    font-size: 15px;
-  }
-  .theme-single-toggle-btn .theme-label-text {
-    font-size: 8.5px;
+    font-size: 14px;
   }
   .whatsapp-float {
     width: 44px;

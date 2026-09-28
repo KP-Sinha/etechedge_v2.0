@@ -48,32 +48,59 @@
             <li class="nav-item"><a class="nav-link" data-page="careers" href="careers.html">Careers</a></li>
             <li class="nav-item"><a class="nav-link" data-page="blog" href="blog.html">Blogs</a></li>
           </ul>
-          <a class="btn btn-primary-custom d-none d-lg-inline-flex" href="contact.html">
-            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        <div class="nav-mobile-cta d-lg-none">
-          <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
-            Get Consultation <i class="bi bi-arrow-right ms-1"></i>
-          </a>
-        </div>
+          <div class="d-none d-lg-flex align-items-center gap-3">
+            <a class="btn btn-primary-custom" href="contact.html">
+              Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <button type="button" class="theme-single-toggle-btn header-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+              <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+            </button>
+          </div>
+          <div class="nav-mobile-cta d-lg-none d-flex align-items-center gap-2">
+            <button type="button" class="theme-single-toggle-btn header-theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+              <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
+            </button>
+            <a class="btn btn-primary-custom nav-mobile-close" href="contact.html">
+              Get Consultation <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
         </div>
       </div>
     </nav>
 
-    <section class="inner-hero page-hero-about">
-      <div class="container">
-        <div class="breadcrumb-custom">
-          <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <span class="active">About Us</span>
+    <section class="inner-hero page-hero-about services-immersive-hero">
+      <div class="container position-relative" style="z-index: 2;">
+        <div class="row align-items-center g-5 py-3">
+          <div class="col-lg-6 services-hero-content">
+            <div class="breadcrumb-custom">
+              <a href="index.html">Home</a> <i class="bi bi-chevron-right"></i> <span>About Us</span> <i class="bi bi-circle-fill hero-crumb-dot"></i> <span class="active section-label-inline">OUR MISSION &amp; PHILOSOPHY</span>
+            </div>
+            <h1 class="services-hero-heading">
+              Engineering Digital Solutions with <span class="text-gradient-cyan">Integrity &amp; Precision</span>
+            </h1>
+            <p class="services-hero-subtext">
+              EtechEdge is an IT and software solutions company dedicated to helping startups, diagnostic healthcare providers, supply chain managers, and enterprises leverage technology for sustainable growth.
+            </p>
+            <div class="services-hero-actions">
+              <a href="#about-story" class="btn btn-primary-custom services-primary-btn">
+                Discover Our Story <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a href="contact.html" class="btn btn-outline-custom services-secondary-btn">
+                Work With Us <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 services-hero-visual-col text-center">
+            <div class="services-hero-artwork-wrapper">
+              <img src="assets/about-hero-dark.jpg" alt="EtechEdge Digital Engineering Team" class="services-hero-graphic services-hero-dark-img img-fluid" />
+              <img src="assets/about-hero-light.jpg" alt="EtechEdge Digital Engineering Team" class="services-hero-graphic services-hero-light-img img-fluid" />
+            </div>
+          </div>
         </div>
-        <span class="section-label">OUR MISSION & PHILOSOPHY</span>
-        <h1>Engineering Digital Solutions with Integrity & Precision</h1>
-        <p>
-          EtechEdge is an IT and software solutions company dedicated to helping startups, diagnostic healthcare providers, supply chain managers, and enterprises leverage technology for sustainable growth.
-        </p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="about-story">
       <div class="container">
         <div class="row align-items-center g-5">
           <div class="col-lg-6">
@@ -341,13 +368,6 @@
         </div>
       </div>
     </footer>
-    <!-- Floating Theme Toggle (Bottom-Left) -->
-    <div class="floating-theme-toggle">
-      <button type="button" class="theme-single-toggle-btn" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
-        <span class="theme-icon-wrap"><i class="bi bi-moon-stars"></i></span>
-        <span class="theme-label-text">Dark</span>
-      </button>
-    </div>
 
     <div class="floating-actions">
       <a href="https://wa.me/917338357002?text=Hello%20EtechEdge%20Team,%20I%20am%20interested%20in%20your%20software%20solutions." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with EtechEdge">
